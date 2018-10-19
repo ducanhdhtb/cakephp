@@ -4,9 +4,6 @@ class UsersController extends AppController{
      public $name = "Users"; // tên của Controller User
      function index(){
       $data = $this->User->find("all");
-      /*echo "<pre>";
-      var_dump($data);
-      echo "</pre>";*/
       $this->set("data",$data);
      }
 }
